@@ -1,0 +1,22 @@
+{
+  "name": "jquery-multiselect2side",
+  "version": "0.1.0",
+  "homepage": "https://github.com/KanbanSolutions/jquery-multiselect2side",
+  "authors": [
+    "Giovanni Casassa (senamion.com - senamion.it)"
+  ],
+  "description": "double sided multiple select boxes",
+  "main": "./jquery.multiselect2side.js",
+  "keywords": [
+    "multiselect",
+    "2side"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
