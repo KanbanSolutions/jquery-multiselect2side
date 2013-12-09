@@ -43,6 +43,7 @@
 
 			return this.each(function () {
 				var	el = $(this);
+                var html = $('html');
 				var data = el.data('multiselect2side');
 
 				if (options)
@@ -272,7 +273,9 @@
 				$(this).find("option:not(:selected)").clone().appendTo(leftSel);
 
 				// SELECT FIRST LEFT ITEM AND DESELECT IN RIGHT (NOT IN IE6)
-				if (!($.browser.msie && $.browser.version == '6.0')) {
+                // jQuery browser is removed, check now requires html boilerplate
+                // conditions html comments https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md
+				if (!(html.hasClass('ie6') || html.hasClass('le-ie7') || html.hasClass('ielte7'))) {
 					leftSel.find("option").eq(0).attr("selected", true);
 					rightSel.children().removeAttr("selected");
 				}
